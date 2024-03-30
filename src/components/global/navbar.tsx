@@ -11,8 +11,6 @@ const Navbar = async (props: Props) => {
      border-b-[1px] border-neutral-900 justify-between"
     >
       <aside className="flex items-center gap-[2px]">
-        {/* <p className="text-3xl font-bold">Flux.ai</p> */}
-        {/* <p className="text-3xl font-bold">lu</p> */}
         <Image
           src="/fluxLogo.png"
           width={60}
