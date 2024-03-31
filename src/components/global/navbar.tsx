@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { MenuIcon } from "lucide-react";
+import { UserButton } from "@clerk/nextjs";
 type Props = {};
 
 const Navbar = async (props: Props) => {
@@ -26,10 +27,12 @@ const Navbar = async (props: Props) => {
             <Link href="#">Products</Link>
           </li>
           <li>
-            <Link href="#">Pricing</Link>
+            <Link href="#clients">Clients</Link>
           </li>
           <li>
-            <Link href="#">Clients</Link>
+            <Link href="#pricing" scroll={true}>
+              Pricing
+            </Link>
           </li>
           <li>
             <Link href="#">Resources</Link>
@@ -52,7 +55,7 @@ const Navbar = async (props: Props) => {
             {true ? "Dashboard" : "Get Started"}
           </span>
         </Link>
-        {/* {true ? <UserButton afterSignOutUrl="/" /> : null} */}
+        <UserButton />
         <MenuIcon className="md:hidden" />
       </aside>
     </header>

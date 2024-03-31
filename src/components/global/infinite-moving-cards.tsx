@@ -79,6 +79,9 @@ export const InfiniteMovingCards = ({
         className
       )}
     >
+       <h1 className="text-5xl text-center mb-4 bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
+        Trusted by the world's best companies
+      </h1>
       <ul
         ref={scrollerRef}
         className={cn(
