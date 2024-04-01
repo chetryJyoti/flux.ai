@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import * as LR from "@uploadcare/blocks";
 import { useRouter } from "next/navigation";
 type Props = {
-  onUpload?: any;
+  onUpload: (e: string) => any;
 };
 
 LR.registerBlocks(LR);
